@@ -53,11 +53,11 @@
   }
 
   .bustelo::after {
-    content: "\A\A\ANET WT 10 OZ (283g)";
+    content: "";
     font-family: "helvetica";
+    color: white;
     display: flex;
     justify-content: center;
-    color: white;
     position: absolute;
     width: 100%;
     height: 30%;
@@ -67,19 +67,63 @@
   }
 
   .right-can {
+    position: absolute;
   }
 
+  .right-can-net-weight {
+    font-family: "helvetica";
+    color: white;
+    position: absolute;
+    transform: translateX(40%) translateY(-280%);
+  }
+  
+  .right-can-text {
+    position: absolute;
+    content: "";
+    color: white;
+    font-family: "helvetica";
+    font-size: 10.5px;
+    transform: translateX(21%)translateY(-570%)scaleY(1.1);
+  }
+  
+    .right-can-text::before {
+    position: absolute;
+    content: "VACUUM PACKED - 100% PURE COFFEE";
+    color: hsl(53, 100%, 58%);
+    font-family: "helvetica";
+    font-size: 9px;
+    font-style: italic;
+    transform: translateX(10%)translateY(240%)scaleY(1.1);
+  }
+  
   .left-can {
     left: 225px;
+  }
+  
+  .left-can-net-weight {
+    font-family: "helvetica";
+    color: white;
+    position: absolute;
+    transform: translateX(185%) translateY(-280%);
   }
   
   .left-can-text {
     position: absolute;
     content: "";
-    color: purple;
-    font-family: "helvetica1";
-    font-size: 10px;
-    transform: translateX(120%)translateY(-00%);
+    color: white;
+    font-family: "helvetica";
+    font-size: 10.5px;
+    transform: translateX(109.5%)translateY(-570%)scaleY(1.1);
+  }
+  
+  .left-can-text::before {
+    position: absolute;
+    content: "VACUUM PACKED - 100% PURE COFFEE";
+    color: hsl(53, 100%, 58%);
+    font-family: "helvetica";
+    font-size: 9px;
+    font-style: italic;
+    transform: translateX(10%)translateY(240%)scaleY(1.1);
   }
 
   .cup1 {
@@ -314,19 +358,20 @@
   .coffee {
     position: absolute;
     font-family: "futura";
+    font-weight: bold;
     font-style: italic ;
     color: #000049;
-    font-size: 16px;
+    font-size: 12.5px;
   }
   
   .coffee-left {
-    top: 72%;
-    left: 8%;
+    top: 74%;
+    left: 12%;
   }
   
     .coffee-right {
-    top: 72%;
-    left: 48%;
+    top: 74%;
+    left: 50%;
   }
 
   .grid {
@@ -404,5 +449,14 @@
   </div>
   <div class="left-can-text">
     <p>LWAYS PURE AND FLAVORFUL, LIKE NO OTHER</p>
+  </div>
+  <div class="right-can-text">
+    <p>ALWAYS PURE AND FLAVORFUL, LIKE NO</p>
+  </div>
+  <div class="right-can-net-weight">
+    <p> NET WT 10 OZ (283g)</p>
+  </div>
+  <div class="left-can-net-weight">
+    <p> NET WT 10 OZ (283g)</p>
   </div>
 </div>
