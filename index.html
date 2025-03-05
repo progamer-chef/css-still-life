@@ -374,6 +374,111 @@
     left: 50%;
   }
 
+  .shader {
+  position: absolute;
+  width: 220px;
+  height: 315px;
+  background: rgb(154,150,150);
+  background: linear-gradient(90deg, rgba(154,150,150,0.7967667436489607) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 82%, rgba(0,0,0,0.5) 96%, rgba(0,0,0,0.55) 100%); 
+  transform: translateY(-415px);  
+  }
+  
+  .shader::before {
+    position: absolute;
+    content:"";
+    width: 220px;
+    height: 315px;
+      background: rgb(154,150,150);
+    background: linear-gradient(90deg, rgba(154,150,150,0.7967667436489607) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 82%, rgba(0,0,0,0.5) 98%, rgba(0,0,0,1) 100%);
+    transform: translateX(225px) rotateY(180deg);
+  }
+  
+  .lid {
+    width: 220px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    transform: translateY(-415px);
+    background: rgb(154,150,150);
+    background: linear-gradient(90deg, rgba(154,150,150,0.7967667436489607) 0%, rgba(255,255,255,0) 7%, rgba(255,255,255,0) 82%, rgba(0,0,0,0.5) 96%, rgba(0,0,0,0.55) 100%); 
+   background: rgb(252,255,0);
+   background: linear-gradient(0deg, rgba(252,255,0,1) 15%, rgba(228,205,0,1) 40%, rgba(228,205,0,1) 60%, rgba(252,255,0,1) 85%); 
+  }
+  
+  .lid::after {
+    width: 220px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    transform: translateY(-415px);
+    background: rgb(154,150,150);
+    background: linear-gradient(90deg, rgba(154,150,150,0.7967667436489607) 0%, rgba(255,255,255,0) 7%, rgba(255,255,255,0) 82%, rgba(0,0,0,0.5) 96%, rgba(0,0,0,0.55) 100%); 
+   background: rgb(252,255,0);
+   background: linear-gradient(0deg, rgba(252,255,0,1) 15%, rgba(228,205,0,1) 40%, rgba(228,205,0,1) 60%, rgba(252,255,0,1) 85%); 
+   transform: translateX(225px)
+  }
+  .lighting {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 45%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) 55%); 
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 43%, 75% 50%, 100% 56%, 0% 56%, 0% 51%, 22% 43%);
+    transform: scale(.05) translateY(-10200px) translateX(900px);
+  }
+  
+  .L2 {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 45%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) 55%); 
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 43%, 75% 50%, 100% 56%, 0% 56%, 0% 51%, 22% 43%);
+    transform: scale(.05) translateY(-10200px) translateX(2000px);
+  }
+  
+    .L3 {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 45%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) 55%); 
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 43%, 75% 50%, 100% 56%, 0% 56%, 0% 51%, 22% 43%);
+    transform: scale(.05) translateY(-20200px) translateX(2000px);
+  }
+  
+  .logo1 {
+    position: absolute;
+    clip-path: polygon(51% 66%, 52% 72%, 52% 100%, 67% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transform: scale(.1) translateY(-1180%) translateX(-60%);
+     background: rgb(196,185,137);
+background: linear-gradient(90deg, rgba(196,185,137,1) 5%, rgba(1,2,102,1) 5%, rgba(1,2,102,1) 10%, rgba(196,185,137,1) 10%, rgba(196,185,137,1) 15%, rgba(1,2,102,1) 15%, rgba(1,2,102,1) 20%, rgba(196,185,137,1) 20%, rgba(196,185,137,1) 25%, rgba(1,2,102,1) 25%, rgba(1,2,102,1) 30%, rgba(196,185,137,1) 30%, rgba(196,185,137,1) 35%, rgba(1,2,102,1) 35%, rgba(1,2,102,1) 40%, rgba(196,185,137,1) 40%, rgba(196,185,137,1) 45%, rgba(1,2,102,1) 45%, rgba(1,2,102,1) 50%, rgba(196,185,137,1) 50%, rgba(196,185,137,1) 55%, rgba(1,2,102,1) 55%, rgba(1,2,102,1) 60%, rgba(196,185,137,1) 60%, rgba(196,185,137,1) 65%, rgba(1,2,102,1) 65%, rgba(1,2,102,1) 70%, rgba(196,185,137,1) 70%, rgba(196,185,137,1) 75%, rgba(1,2,102,1) 75%, rgba(1,2,102,1) 80%, rgba(196,185,137,1) 80%, rgba(196,185,137,1) 85%, rgba(1,2,102,1) 85%, rgba(1,2,102,1) 90%, rgba(196,185,137,1) 90%, rgba(196,185,137,1) 95%, rgba(1,2,102,1) 95%, rgba(1,2,102,1) 100%); 
+  }
+  
+  .logo2 {
+    position: absolute;
+    content:"";
+    clip-path: polygon(52% 100%, 0 0, 100% 0);
+    height: 100%;
+    width: 100%;
+    background-color: red; 
+    transform: scale(.1) translateY(-1150%) translateX(320%);
+  }
+  
+  .logo2::after {
+    position: absolute;
+    content: "";
+    clip-path: polygon(52% 61%, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 100%;
+    transform: scale(1) translateY(-1180%) translateX(310%);
+    background: rgb(196,185,137);
+    background: linear-gradient(90deg, rgba(1_96,185,137,1) 5%, rgba(1,2,102,1) 5%, rgba(1,2,102,1) 10%, rgba(196,185,137,1) 10%, rgba(196,185,137,1) 15%, rgba(1,2,102,1) 15%, rgba(1,2,102,1) 20%, rgba(196,185,137,1) 20%, rgba(196,185,137,1) 25%, rgba(1,2,102,1) 25%, rgba(1,2,102,1) 30%, rgba(196,185,137,1) 30%, rgba(196,185,137,1) 35%, rgba(1,2,102,1) 35%, rgba(1,2,102,1) 40%, rgba(196,185,137,1) 40%, rgba(196,185,137,1) 45%, rgba(1,2,102,1) 45%, rgba(1,2,102,1) 50%, rgba(196,185,137,1) 50%, rgba(196,185,137,1) 55%, rgba(1,2,102,1) 55%, rgba(1,2,102,1) 60%, rgba(196,185,137,1) 60%, rgba(196,185,137,1) 65%, rgba(1,2,102,1) 65%, rgba(1,2,102,1) 70%, rgba(196,185,137,1) 70%, rgba(196,185,137,1) 75%, rgba(1,2,102,1) 75%, rgba(1,2,102,1) 80%, rgba(196,185,137,1) 80%, rgba(196,185,137,1) 85%, rgba(1,2,102,1) 85%, rgba(1,2,102,1) 90%, rgba(196,185,137,1) 90%, rgba(196,185,137,1) 95%, rgba(1,2,102,1) 95%, rgba(1,2,102,1) 100%);
+  }
+  
   .grid {
     position: absolute;
   }
@@ -459,4 +564,10 @@
   <div class="left-can-net-weight">
     <p> NET WT 10 OZ (283g)</p>
   </div>
+  <div class="lid"></div>
+  <div class="shader"></div>
+  <div class="lighting"></div>
+  <div class="L2"></div>
+  <div class="logo1"></div>
+  <div class="logo2"></div>
 </div>
